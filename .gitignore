@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large outputs
+*.png
+*.npy
+
+# Ignore all audio except selected ones
+data_wavs/*
+!data_wavs/input_voice.wav
+!data_wavs/sample1.wav
+!data_wavs/sample2.wav
