@@ -1,0 +1,21 @@
+# Ignore dataset
+LibriSpeech/
+data_wavs/
+
+# Ignore virtual environment
+venv/
+
+# Ignore cache & temporary files
+__pycache__/
+*.pyc
+
+# Allow model weights (we DO want to commit)
+#!*.h5   <-- remove this, we want .h5 to be tracked
+
+# Ignore everything inside outputs EXCEPT specific tracked files
+outputs/*
+!outputs/
+!outputs/recovered_analog_*.wav
+!outputs/recovered_neural_*.wav
+!outputs/snr_comparison.csv
+!outputs/*.png
